@@ -1,0 +1,20 @@
+version: "3"
+services:
+  # sonic engine
+  engine:
+    container_name: engine_con-1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - sonic-engine-app1:/usr/src/app
+    networks:
+      - net
+    # stdin_open: true
+    # tty: true
+
+volumes:
+  sonic-engine-app1:
+
+networks:
+  net:

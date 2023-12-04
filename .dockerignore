@@ -1,0 +1,12 @@
+.venv
+assets
+tests
+*.pys
+*.md
+requirements-tests.txt
+template
+templates
+extensions-repos
+redis
+*.egg-info
+*.git
