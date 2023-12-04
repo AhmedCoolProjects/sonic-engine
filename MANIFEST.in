@@ -1,0 +1,10 @@
+include *.md
+include *.py
+include *.txt
+include *.yaml
+include Dockerfile
+recursive-include assets *.gif
+recursive-include assets *.png
+recursive-include cli *.py
+recursive-include redis *.yaml
+recursive-include tests *.py

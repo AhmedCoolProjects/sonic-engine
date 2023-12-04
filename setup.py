@@ -15,14 +15,15 @@ import sys
 import setuptools
 
 if not sys.version_info >= (3, 7):
-    sys.exit('Sorry, python3.7+ is required for this package')
+    sys.exit("Sorry, python3.7+ is required for this package")
 
 setuptools.setup(
     name="sonic_engine",
     version="2.1.10",
+    url="https://github.com/AhmedCoolProjects/sonic-engine",
+    author_email="ahmed.baragdy@outlook.com",
     author="Soufiane Oualil, Ahmed Bargady",
     description="Sonic Engine is a python package for the AtlasSonic project",
     packages=setuptools.find_packages(),
-    install_requires=["pyaml", "redis == 4.2.2",
-                      "numpy", "pytest", "yapsy", "flask"]
+    install_requires=["pyaml", "redis == 4.2.2", "numpy", "pytest", "yapsy", "flask"],
 )
